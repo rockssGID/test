@@ -1,0 +1,19 @@
+<svg id="b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.1 129.7">
+  <defs>
+    <clipPath id="d">
+      <path style="stroke-width:0;fill:none" d="M0 12h25v118H0z"/>
+    </clipPath>
+    <style>
+      .e{stroke:#595959;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;fill:none}
+    </style>
+  </defs>
+  <g id="c">
+    <path class="e" d="M93 16v89c2-7 8-12 16-12s14 5 15 12V16m-31 90v3c2 7 8 13 16 13s14-6 15-13v-3"/>
+    <path class="e" d="M124 18v-4c-1-7-8-12-15-12-8 0-14 5-16 12v4"/>
+    <circle class="e" cx="108.7" cy="107.8" r="6.1"/>
+    <path class="e" d="M109 122H20V15h73"/>
+    <path class="e" d="M3 14h17M3 36h17M3 57h17M3 79h17M3 100h17M3 122h17" style="clip-path:url(#d)"/>
+    <path class="e" d="M20 29c42 0 42-32 73 0M20 47c42 0 42-32 73 0m-73 61c42 0 42 31 73 0M20 92c42 0 42 32 73 0"/>
+    <circle class="e" cx="66.7" cy="68.2" r="15.5"/>
+  </g>
+</svg>

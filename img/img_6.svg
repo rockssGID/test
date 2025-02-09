@@ -1,0 +1,18 @@
+<svg id="b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.2 128.1">
+  <defs>
+    <style>
+      .l,.m{stroke:#595959;fill:none}.l{stroke-linejoin:round;stroke-linecap:round;stroke-width:4px}.m{stroke-miterlimit:10}
+    </style>
+  </defs>
+  <g id="c">
+    <path class="m" transform="rotate(-180 114 82)" d="M109 43h11v78h-11z"/>
+    <path class="m" d="M120 47h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5m5 4h-5"/>
+    <path class="l" d="M87 29h17L77 2v17c0 6 5 10 10 10Z"/>
+    <path d="M87 29c-5 0-10-5-10-10V2H11c-5 0-9 4-9 9v106c0 5 4 9 9 9h84c5 0 9-4 9-9V29H87Z" style="stroke-width:4px;stroke-linejoin:round;fill:none;stroke:#595959"/>
+    <path class="l" d="m53 39 8 16 19 3-14 13 4 18-17-8-16 8 3-18-13-13 18-3 8-16z"/>
+    <path style="stroke-width:.8px;fill:#e2e2e2;stroke-linecap:round;stroke-linejoin:round;stroke:#595959" d="m47 113 7 7 63-61-7-7-63 61z"/>
+    <path style="fill:#e9e9e9;stroke-width:.8px;stroke-linecap:round;stroke-linejoin:round;stroke:#595959" d="m49 115 3 2 63-60-3-3-63 61z"/>
+    <path style="fill:#e9e9e9;stroke-width:.8px;stroke-linejoin:round;stroke:#595959" d="m44 122 3-9 6 7-9 2z"/>
+    <path style="fill:#595959;stroke-width:.8px;stroke-linejoin:round;stroke:#595959" d="m44 122 1-3 2 2-3 1z"/>
+  </g>
+</svg>

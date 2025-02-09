@@ -1,0 +1,12 @@
+<svg id="b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.5 124.5">
+  <defs>
+    <style>
+      .e{fill:none;stroke:#595959;stroke-linejoin:round;stroke-width:4px}
+    </style>
+  </defs>
+  <g id="c">
+    <path class="e" d="M21 55h58v31H21zm82 12L79 86V55l24-16v28z"/>
+    <path class="e" d="M79 55H21l24-16h58L79 55z"/>
+    <path d="M33 47h58m-30 76v-14m-42-5 9-9M2 61h13m6-42 9 9M64 2l-1 13m43 6-10 9m27 34-14-1m-5 43-9-10" style="fill:none;stroke:#595959;stroke-linejoin:round;stroke-width:4px;stroke-linecap:round"/>
+  </g>
+</svg>
