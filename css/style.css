@@ -100,6 +100,8 @@ img {
           justify-content: center;
 }
 
+.arrow,
+.block1 .text-title,
 .block1,
 .conteiner > .control-menu {
   display: -webkit-box;
@@ -118,6 +120,8 @@ img {
   font-size: 1.5em;
   color: #595959;
 }
+
+/*TODO home/block1 Анимация логотип крутится  */
 
 @-webkit-keyframes img-logo-rotate {
   0% {
@@ -167,6 +171,8 @@ img {
   }
 }
 
+/*TODO home/block1 Ковровый балдёж scale */
+
 @-webkit-keyframes img-logo-scale {
   0% {
     -webkit-transform: scale(1);
@@ -201,20 +207,22 @@ img {
   }
 }
 
+/*TODO home/block1 стрелака в низ указатель */
+
 @-webkit-keyframes arrow-down {
   0% {
     width: 0px;
     opacity: 0%;
-    bottom: 160px;
+    bottom: 10%;
   }
 
   25% {
-    width: 30px;
+    width: 50px;
     opacity: 100%;
   }
 
   100% {
-    bottom: 30px;
+    bottom: 0%;
   }
 }
 
@@ -222,29 +230,26 @@ img {
   0% {
     width: 0px;
     opacity: 0%;
-    bottom: 160px;
+    bottom: 10%;
   }
 
   25% {
-    width: 30px;
+    width: 50px;
     opacity: 100%;
   }
 
   100% {
-    bottom: 30px;
+    bottom: 0%;
   }
 }
+
+/*TODO home/block1 текст анимация */
 
 @-webkit-keyframes text-h1-opacity {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 0;
-  }
-
-  25% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
 
   75% {
@@ -262,11 +267,6 @@ img {
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 0;
-  }
-
-  25% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
 
   75% {
@@ -438,16 +438,14 @@ img {
 }
 
 .block1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
   height: 100vh;
-  text-align: center;
+  -webkit-transition: all ease;
+  transition: all ease;
   background: radial-gradient(circle, #d2c29a, #9f8e77);
 }
 
@@ -456,7 +454,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 70%;
+  height: 85%;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -467,19 +465,30 @@ img {
   overflow: hidden;
 }
 
-.block1 h1 {
+.block1 .text-title {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 12%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.block1 .text-title h1 {
+  text-align: center;
   font-family: "TDVolshebstvo";
   color: #595959;
   font-size: 2.625em;
-  -webkit-transition: all ease;
-  transition: all ease;
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
   -webkit-animation-name: text-h1-opacity;
           animation-name: text-h1-opacity;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
-.block1 img {
+.block1 .block1__logo-animation {
   -webkit-animation-name: img-logo-rotate;
           animation-name: img-logo-rotate;
   -webkit-animation-iteration-count: infinite;
@@ -490,24 +499,24 @@ img {
   overflow: hidden;
 }
 
-.block1 img:nth-of-type(1) {
+.block1 .block1__logo-animation:nth-of-type(1) {
   -webkit-animation-duration: 40s;
           animation-duration: 40s;
 }
 
-.block1 img:nth-of-type(2) {
+.block1 .block1__logo-animation:nth-of-type(2) {
   -webkit-animation-duration: 55s;
           animation-duration: 55s;
 }
 
-.block1 img:nth-of-type(3) {
+.block1 .block1__logo-animation:nth-of-type(3) {
   -webkit-animation-name: img-logo-rotate-left;
           animation-name: img-logo-rotate-left;
   -webkit-animation-duration: 35s;
           animation-duration: 35s;
 }
 
-.block1 img:nth-of-type(4) {
+.block1 .block1__logo-animation:nth-of-type(4) {
   -webkit-animation-name: img-logo-scale;
           animation-name: img-logo-scale;
   -webkit-animation-duration: 60s;
@@ -516,40 +525,19 @@ img {
           animation-iteration-count: infinite;
 }
 
-.arrow-down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.arrow {
+  width: 50px;
 }
 
-.arrow-down span::after,
-.arrow-down span::before {
+.arrow .arrow__down {
   position: absolute;
-  bottom: 40px;
-  content: "";
-  width: 30px;
-  height: 4px;
-  background-color: #595959;
+  width: 50px;
   -webkit-animation-name: arrow-down;
           animation-name: arrow-down;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-}
-
-.arrow-down span::after {
-  left: 49.5%;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.arrow-down span::before {
-  right: 48.5%;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .footer {
@@ -671,6 +659,12 @@ img {
   font-size: 0.625em;
 }
 
+@media (max-width: 1200px) {
+  .block1 .text-title h1 {
+    font-size: 2.125em;
+  }
+}
+
 @media (max-width: 1024px) and (min-aspect-ratio: 3/2) {
   .burger-menu {
     display: -webkit-box;
@@ -734,6 +728,38 @@ img {
   .control-catalog.active {
     left: 135%;
   }
+
+  .block1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .block1 .text-title {
+    bottom: unset;
+    position: unset;
+    overflow: unset;
+  }
+
+  .block1 .block1__logo-animation {
+    left: 10%;
+  }
+
+  .arrow {
+    position: absolute;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    bottom: 20px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block1 .text-title h1 {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -788,5 +814,9 @@ img {
 
   .control-catalog.active {
     left: 135%;
+  }
+
+  .footer .conteiner-footer {
+    gap: 20px;
   }
 }
